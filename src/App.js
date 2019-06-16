@@ -10,6 +10,7 @@ import Alert from './components/layout/Alert';
 import Home from './pages/Home';
 import About from './pages/About';
 import User from './pages/User';
+import NotFound from './pages/NotFound';
 
 const App = () => {
     return (
@@ -28,6 +29,7 @@ const App = () => {
                                     path='/user/:login'
                                     component={User}
                                 />
+                                <Route path='*' component={NotFound} />
                             </Switch>
                         </div>
                     </div>
